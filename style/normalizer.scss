@@ -1,0 +1,33 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+button::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+button,
+input,
+a {
+    display: inline-block;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    line-height: 1rem;
+    font-size: 1rem;
+    outline: none;
+}

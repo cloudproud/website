@@ -1,0 +1,10 @@
+.button {
+    display: inline-block;
+    background: $primary-color;
+    color: $primary-color-contrast;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1rem;
+    padding: .5rem 1rem;
+    border-radius: .3rem;
+}

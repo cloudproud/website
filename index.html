@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <title>Vite App</title>
+</head>
+
+<body>
+  <div class="navigation">
+    <div class="container">
+      <img class="navigation__logo" src="/logos/cloudproud.svg" alt="Cloud Proud">
+
+      <nav class="navigation__items">
+        <a>Product</a>
+        <a>Customers</a>
+        <a>Solution</a>
+        <a>Pricing</a>
+        <a href="mailto:jeroen@cloudproud.nl" class="button">Get in touch!</a>
+      </nav>
+    </div>
+  </div>
+
+  <header class="hero">
+    <div class="container hero__feature">
+      <div class="hero__action">
+        <form>
+          <label class="hero__action__label">Unify Your Data Universe</label>
+          <h1>A single access point<br><span>for all your data</span></h1>
+          <div class="hero__action__input">
+            <input placeholder="Email address" type="email">
+            <button class="button">Join Beta!</button>
+          </div>
+        </form>
+        <div class="hero__action__tags">
+          <span><i class="far fa-check"></i>Easy to Setup</span>
+          <span><i class="far fa-check"></i>Pay as You Go</span>
+        </div>
+      </div>
+      <div>
+        <img src="/hero.svg" alt="A single access point for all your data">
+      </div>
+    </div>
+    <hr>
+    <div class="container hero__logos">
+      <img src="/logos/zwinc.svg" alt="ZWINC">
+    </div>
+  </header>
+
+  <section class="feature">
+    <div>
+      <h2>Click and Connect</h2>
+      <p>Our decentralized data platform allows organizations to connect data sources and expose them as one large virtual database without having to copy data!</p>
+    </div>
+
+    <div class="feature__diagram">
+      <div class="lines">
+        <img class="feature__diagram__sides" src="/lines.svg">
+      </div>
+      <div>
+        <img src="/feature.svg" alt="Product Diagram">
+      </div>
+      <div class="lines">
+        <img class="feature__diagram__sides" src="/lines.svg">
+      </div>
+    </div>
+  </section>
+
+  <footer>
+
+  </footer>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>

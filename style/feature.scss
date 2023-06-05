@@ -1,0 +1,22 @@
+.feature {
+    padding: 6rem 0;
+    background-color: $feature-background;
+
+    &__diagram {
+        display: flex;
+
+        >div {
+            &:nth-child(2) {
+                @extend .container;
+            }
+        }
+
+        >.lines {
+            height: 100%;
+
+            &:last-child {
+                transform: scaleX(-1);
+            }
+        }
+    }
+}

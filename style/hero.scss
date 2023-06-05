@@ -1,0 +1,84 @@
+.hero {
+    padding: 6rem 0;
+    background: $hero-background;
+
+    &__feature {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__action {
+        &__label {
+            @extend .button;
+            background-color: rgba($primary-color, .2);
+            color: $primary-color;
+            font-weight: 600;
+            font-size: 1.25rem;
+        }
+
+        h1 {
+            margin-top: 1.25rem;
+            font-size: 3rem;
+            text-transform: capitalize;
+            font-weight: 500;
+
+            >span {
+                background: $text-gradient;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+
+        &__input {
+            display: flex;
+            margin-top: 2rem;
+            width: 100%;
+            background: #FFF;
+            padding: .3rem;
+            border-radius: .3rem;
+
+            >input {
+                flex: 1;
+                padding: .5rem 1rem;
+                font-weight: 400;
+            }
+        }
+
+        &__tags {
+            display: flex;
+            margin-top: 2rem;
+
+            >span {
+                font-weight: 500;
+                margin-right: 1rem;
+
+                >i {
+                    border-radius: .5rem;
+                    padding: .3rem;
+                    background-color: rgba($hero-form-check, 0.2);
+                    color: $hero-form-check;
+                    margin-right: .5rem;
+                }
+            }
+        }
+    }
+
+    >hr {
+        @extend .container;
+        margin: 2rem auto;
+        opacity: .5;
+        background-color: $line-grey;
+    }
+
+    &__logos {
+        padding: 0 2rem;
+        display: flex;
+        justify-content: center;
+
+        >img {
+            height: 2.5rem;
+            opacity: .5;
+            padding: 1rem 4rem;
+        }
+    }
+}

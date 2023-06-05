@@ -1,0 +1,20 @@
+html {
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@import 'fontawesome/fontawesome.scss';
+@import 'fontawesome/regular.scss';
+
+@import 'normalizer.scss';
+@import 'colors.scss';
+@import 'button.scss';
+@import 'navigation.scss';
+@import 'hero.scss';
+@import 'feature.scss';
