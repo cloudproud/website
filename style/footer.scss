@@ -1,0 +1,92 @@
+.footer {
+    background-color: $footer-background;
+    color: $footer-color-contrast;
+
+    h3,
+    p {
+        color: $footer-text-contrast;
+    }
+
+    &__form {
+        background: url('./public/lines.svg') bottom left no-repeat;
+        background-size: 20rem 50%;
+
+        >.container {
+            display: flex;
+            padding: 6rem 0;
+            justify-content: space-between;
+        }
+
+        &__description {
+            width: 55%;
+            height: 100%;
+
+            >* {
+                margin-bottom: 1.5rem;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        form {
+            width: 40%;
+
+            >* {
+                margin-top: 1rem;
+            }
+
+            input,
+            textarea {
+                padding: 1rem;
+                box-sizing: border-box;
+                border-radius: .3rem;
+                background-color: $footer-form-input-background;
+                color: $footer-form-input-color;
+
+                &::placeholder {
+                    color: $footer-form-placeholder-color;
+                }
+            }
+
+            >.button {
+                margin-top: 1.5rem;
+                width: 100%;
+            }
+        }
+    }
+
+    &__banner {
+        display: flex;
+        padding: 2rem 0;
+        justify-content: space-between;
+        border-top: 1px $footer-form-input-background solid;
+
+        &__copyright {
+            display: flex;
+            align-items: center;
+
+            >img {
+                height: 2rem;
+            }
+
+            >span {
+                color: $footer-text-contrast;
+                margin-left: 1rem;
+            }
+        }
+
+        &__links {
+            display: flex;
+            align-items: center;
+
+            >a {
+                display: block;
+                padding: .5rem 1rem;
+                background: $footer-form-input-background;
+                border-radius: .3rem;
+            }
+        }
+    }
+}

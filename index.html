@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <title>Cloud Proud!</title>
+</head>
+
+<body>
+  <div class="navigation">
+    <div class="container">
+      <img class="navigation__logo" src="/logos/cloudproud.svg" alt="Cloud Proud B.V.">
+
+      <nav class="navigation__items">
+        <a>Product</a>
+        <a>Customers</a>
+        <a>Solution</a>
+        <a>Pricing</a>
+        <a href="mailto:jeroen@cloudproud.nl" class="button">Get in touch!</a>
+      </nav>
+    </div>
+  </div>
+
+  <header class="hero">
+    <div class="container hero__feature">
+      <div class="hero__action">
+        <form>
+          <label class="hero__action__label">A single access point for all your data</label>
+          <h1>Streamline, Unify, Revolutionize<br><span>Your Data Management</span></h1>
+          <div class="hero__action__input">
+            <input placeholder="Email address" type="email">
+            <button class="button">Join Beta!</button>
+          </div>
+        </form>
+        <div class="hero__action__tags">
+          <span><i class="far fa-check"></i>Eliminate data copies</span>
+          <span><i class="far fa-check"></i>Plug and Play</span>
+        </div>
+      </div>
+      <div>
+        <img src="/hero.svg" alt="A single access point for all your data">
+      </div>
+    </div>
+    <hr>
+    <div class="container hero__logos">
+      <img src="/logos/zwinc.svg" alt="ZWINC">
+    </div>
+  </header>
+
+  <section class="feature">
+    <header class="container">
+      <h2>Eliminating the need for Data Duplications!</h2>
+      <p>Our solution acts as a virtual data source, enabling seamless SQL-based querying. Empower your developers, analysts, and management to leverage data as a powerful catalyst for driving your company forward.</p>
+    </header>
+
+    <div class="feature__diagram">
+      <div class="lines">
+        <img class="feature__diagram__sides" src="/lines.svg">
+      </div>
+      <div class="diagram">
+        <img src="/feature.svg" alt="Product Diagram">
+      </div>
+      <div class="lines">
+        <img class="feature__diagram__sides" src="/lines.svg">
+      </div>
+    </div>
+
+    <div class="feature__cards container">
+      <div>
+        <i class="far fa-database"></i>
+        <h3>Connect with your Systems</h3>
+        <p>We have developed a collection of connectors allowing our platform to connect with your existing data sources.</p>
+      </div>
+      <div>
+        <i class="far fa-file-search"></i>
+        <h3>Query Your Data Using SQL</h3>
+        <p>Our database engine allows engineers to interact with the underlying data sources using SQL.</p>
+      </div>
+      <div>
+        <i class="far fa-stopwatch"></i>
+        <h3>Fetch Data in Real Time</h3>
+        <p>Fetch data in real time, no more waiting for pipelines to complete or batch jobs to be triggered.</p>
+      </div>
+      <div>
+        <i class="far fa-plug"></i>
+        <h3>Integrates with Your Tools</h3>
+        <p>Connect with your data through the PostgreSQL wire protocol allowing your existing tools to work right out of the box.</p>
+      </div>
+      <div>
+        <i class="far fa-lock-alt"></i>
+        <h3>Fine Grained Access Control</h3>
+        <p>Set-up fine grained access control rules ensuring that your data stays secure. Be able to see who has access to which system in one overview.</p>
+      </div>
+      <div>
+        <i class="far fa-hand-holding-box"></i>
+        <h3>Data as a Product</h3>
+        <p>Discover new data sources through the data explorer. Get in touch with data owners to create new integrations in minutes.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__form">
+      <div class="container">
+        <div class="footer__form__description">
+          <h3>Get in touch</h3>
+          <h2>Get started today</h2>
+          <p>Let's get in touch and book a demo today! See how our solution could allow your organization to create a truly scalable data architecture.</p>
+        </div>
+        <form>
+          <input type="text" placeholder="Full Name">
+          <input type="email" placeholder="Email">
+          <textarea rows="10" placeholder="Describe your use case (Optional)"></textarea>
+          <button class="button">Join Beta Today!</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer__banner container">
+      <div class="footer__banner__copyright">
+        <img src="/logos/cloudproud-white.svg" alt="Cloud Proud B.V.">
+        <span>&copy; Copyright 2023. All rights reserved.</span>
+      </div>
+      <div class="footer__banner__links">
+        <a href="https://github.com/cloudproud" target="_blank" class="footer__banner__link"><i class="fab fa-github"></i> Github</a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>

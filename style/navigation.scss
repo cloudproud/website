@@ -1,0 +1,39 @@
+.navigation {
+    background-color: #FFF;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 99;
+
+    >.container {
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 0;
+    }
+
+    &__logo {
+        width: 20%;
+        max-width: 300px;
+    }
+
+    &__items {
+        display: flex;
+        justify-self: end;
+
+        >a {
+            display: block;
+            align-self: center;
+            padding: .5rem 1rem;
+            font-weight: 500;
+            cursor: pointer;
+
+            &:hover {
+                color: $primary-color;
+            }
+
+            &:last-of-type {
+                margin-right: 1rem;
+            }
+        }
+    }
+}
