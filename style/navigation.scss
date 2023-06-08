@@ -1,7 +1,3 @@
-body {
-    margin-top: 6rem;
-}
-
 .navigation {
     background-color: #FFF;
     position: fixed;
@@ -12,7 +8,7 @@ body {
     >.container {
         display: flex;
         justify-content: space-between;
-        padding: 2rem;
+        padding: 2rem 0;
     }
 
     &__logo {

@@ -1,16 +1,20 @@
-html {
+html,
+input,
+textarea,
+button {
     font-size: 16px;
     font-family: 'Inter', sans-serif;
 }
 
 .container {
-    width: 100%;
+    width: 90%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 @import 'fontawesome/fontawesome.scss';
 @import 'fontawesome/regular.scss';
+@import 'fontawesome/brands.scss';
 
 @import 'normalizer.scss';
 @import 'colors.scss';
@@ -18,3 +22,4 @@ html {
 @import 'navigation.scss';
 @import 'hero.scss';
 @import 'feature.scss';
+@import 'footer.scss';
