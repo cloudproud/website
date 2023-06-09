@@ -31,12 +31,13 @@
   <header class="hero">
     <div class="container hero__feature">
       <div class="hero__action">
-        <form>
+        <form method="POST" action="https://formspree.io/f/myyaqvqk">
           <label class="hero__action__label">A single access point for all your data</label>
           <h1>Streamline, Unify, Revolutionize<br><span>Your Data Management</span></h1>
           <div class="hero__action__input">
-            <input placeholder="Email address" type="email">
-            <button class="button">Join Beta!</button>
+            <input name="Email address" placeholder="Email address" type="email">
+            <button type="submit" class="button">Join Beta!</button>
+            <input type="hidden" name="_subject" value="New beta submission!" />
           </div>
         </form>
         <div class="hero__action__tags">
@@ -109,11 +110,12 @@
           <h2>Get started today</h2>
           <p>Let's get in touch and book a demo today! See how our solution could allow your organization to create a truly scalable data architecture.</p>
         </div>
-        <form>
-          <input type="text" placeholder="Full Name">
-          <input type="email" placeholder="Email">
-          <textarea rows="10" placeholder="Describe your use case (Optional)"></textarea>
-          <button class="button">Join Beta Today!</button>
+        <form name="beta" method="POST" action="https://formspree.io/f/myyaqvqk">
+          <input type="text" name="Full Name" placeholder="Full Name">
+          <input type="email" name="Email address" placeholder="Email">
+          <textarea rows="10" name="Use case" placeholder="Describe your use case (Optional)"></textarea>
+          <button type="submit" class="button">Join Beta Today!</button>
+          <input type="hidden" name="_subject" value="New beta submission!" />
         </form>
       </div>
     </div>
