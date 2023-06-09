@@ -2,12 +2,25 @@
     padding: 12rem 0 6rem 0;
     background: $hero-background;
 
+
     &__feature {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__diagram {
+        width: 50%;
+        overflow: visible;
+
+        >img {
+            width: 100%;
+        }
     }
 
     &__action {
+        width: 50%;
+
         &__label {
             @extend .button;
             background-color: rgba($primary-color, .2);
@@ -79,6 +92,29 @@
             height: 2.5rem;
             opacity: .5;
             padding: 1rem 4rem;
+        }
+    }
+
+    @media only screen and (max-width: 1200px) {
+        &__diagram>img {
+            height: 100%;
+            width: auto;
+        }
+    }
+
+    @media only screen and (max-width: 900px) {
+        &__diagram {
+            margin-top: 6rem;
+
+            >img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        &__action,
+        &__diagram {
+            width: 100%;
         }
     }
 }

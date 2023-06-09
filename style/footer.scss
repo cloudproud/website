@@ -15,6 +15,7 @@
             display: flex;
             padding: 6rem 0;
             justify-content: space-between;
+            flex-wrap: wrap;
         }
 
         &__description {
@@ -62,6 +63,7 @@
         padding: 2rem 0;
         justify-content: space-between;
         border-top: 1px $footer-form-input-background solid;
+        flex-wrap: wrap;
 
         &__copyright {
             display: flex;
@@ -86,6 +88,37 @@
                 padding: .5rem 1rem;
                 background: $footer-form-input-background;
                 border-radius: .3rem;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 700px) {
+        &__form {
+            background-image: none;
+
+            &__description {
+                width: 100%;
+                height: auto;
+            }
+
+            form {
+                margin-top: 3rem;
+                width: 100%;
+            }
+        }
+
+        &__banner {
+            justify-content: center;
+
+            &__links {
+                width: 100%;
+                margin-top: 1.5rem;
+
+                >a {
+                    width: 100%;
+                    padding: 1rem 0;
+                    text-align: center;
+                }
             }
         }
     }

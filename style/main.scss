@@ -6,6 +6,16 @@ button {
     font-family: 'Inter', sans-serif;
 }
 
+@media only screen and (max-width: 700px) {
+
+    html,
+    input,
+    textarea,
+    button {
+        font-size: 14px;
+    }
+}
+
 .container {
     width: 90%;
     max-width: 1200px;

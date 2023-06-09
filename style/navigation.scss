@@ -12,8 +12,7 @@
     }
 
     &__logo {
-        width: 20%;
-        max-width: 300px;
+        height: 2rem;
     }
 
     &__items {
@@ -28,12 +27,26 @@
             cursor: pointer;
 
             &:hover {
-                color: $primary-color;
+                opacity: .6;
             }
 
             &:last-of-type {
                 margin-right: 1rem;
             }
+        }
+    }
+
+    @media only screen and (max-width: 900px) {
+        &__items {
+            >a:not(.get-in-touch) {
+                display: none;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 500px) {
+        &__items {
+            display: none;
         }
     }
 }
