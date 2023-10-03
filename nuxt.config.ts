@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   modules: ['@nuxtjs/tailwindcss'],
   devtools: { enabled: true },
   css: [
+    '~/assets/css/main.css',
     '~/assets/fontawesome/fontawesome.css',
     '~/assets/fontawesome/regular.css',
     '~/assets/fontawesome/solid.css'
