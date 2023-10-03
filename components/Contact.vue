@@ -27,68 +27,78 @@
                 <span class="sr-only">Address</span>
                 <BuildingOffice2Icon class="h-7 w-6 text-gray-400" aria-hidden="true" />
               </dt>
-              <dd>545 Mavis Island<br />Chicago, IL 99191</dd>
-            </div>
-            <div class="flex gap-x-4">
-              <dt class="flex-none">
-                <span class="sr-only">Telephone</span>
-                <PhoneIcon class="h-7 w-6 text-gray-400" aria-hidden="true" />
-              </dt>
-              <dd><a class="hover:text-white" href="tel:+1 (555) 234-5678">+1 (555) 234-5678</a></dd>
+              <dd>Ceintuurbaan 15<br />8022 AW, Zwolle</dd>
             </div>
             <div class="flex gap-x-4">
               <dt class="flex-none">
                 <span class="sr-only">Email</span>
                 <EnvelopeIcon class="h-7 w-6 text-gray-400" aria-hidden="true" />
               </dt>
-              <dd><a class="hover:text-white" href="mailto:hello@example.com">hello@example.com</a></dd>
+              <dd><a class="hover:text-white" href="mailto:hello@example.com">hello@cloudproud.nl</a></dd>
+            </div>
+            <div class="flex">
+              <dd class="mt-2">
+                <a :href="slack" target="_blank">
+                  <button type="button" class="rounded-md bg-indigo-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">
+                    Join our Slack!
+                  </button>
+                </a>
+              </dd>
             </div>
           </dl>
         </div>
       </div>
-      <form action="#" method="POST" class="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48">
-        <div class="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
-          <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
-            <div>
-              <label for="first-name" class="block text-sm font-semibold leading-6 text-white">First name</label>
-              <div class="mt-2.5">
-                <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6" />
+      <div class="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48">
+        <ul role="list" class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
+          <li v-for="person in people" :key="person.name">
+            <div class="flex items-center gap-x-6">
+              <img class="h-16 w-16 rounded-full" :src="person.profile" :alt="person.name" />
+              <div>
+                <h3 class="text-base font-semibold leading-7 tracking-tight text-white">{{ person.name }}</h3>
+                <p class="text-sm font-semibold leading-6 text-white">{{ person.role }}</p>
               </div>
             </div>
-            <div>
-              <label for="last-name" class="block text-sm font-semibold leading-6 text-white">Last name</label>
-              <div class="mt-2.5">
-                <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6" />
-              </div>
-            </div>
-            <div class="sm:col-span-2">
-              <label for="email" class="block text-sm font-semibold leading-6 text-white">Email</label>
-              <div class="mt-2.5">
-                <input type="email" name="email" id="email" autocomplete="email" class="block w-full rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6" />
-              </div>
-            </div>
-            <div class="sm:col-span-2">
-              <label for="phone-number" class="block text-sm font-semibold leading-6 text-white">Phone number</label>
-              <div class="mt-2.5">
-                <input type="tel" name="phone-number" id="phone-number" autocomplete="tel" class="block w-full rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6" />
-              </div>
-            </div>
-            <div class="sm:col-span-2">
-              <label for="message" class="block text-sm font-semibold leading-6 text-white">Message</label>
-              <div class="mt-2.5">
-                <textarea name="message" id="message" rows="4" class="block w-full rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6" />
-              </div>
-            </div>
-          </div>
-          <div class="mt-8 flex justify-end">
-            <button type="submit" class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">Send message</button>
-          </div>
-        </div>
-      </form>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </template>
 
 <script setup>
-import { BuildingOffice2Icon, EnvelopeIcon, PhoneIcon } from '@heroicons/vue/24/outline'
+import { BuildingOffice2Icon, EnvelopeIcon } from '@heroicons/vue/24/outline'
+const slack = import.meta.env.VITE_SLACK_INVITE_URI
+
+const people = [
+  {
+    name: 'Oxana Bulanova',
+    role: 'Co-Founder / CFO',
+    profile: '/team/oxana.jpeg',
+  },
+  {
+    name: 'Jeroen Rinzema',
+    role: 'Co-Founder / CTO',
+    profile: '/team/jeroen.jpeg',
+  },
+  {
+    name: 'Sarath S. Pillai',
+    role: 'Senior Back-end developer',
+    profile: '/team/sarath.jpeg',
+  },
+  {
+    name: 'Yuriy T.',
+    role: 'Senior Back-end developer',
+    profile: '/team/yuriy.jpeg',
+  },
+  {
+    name: 'Christian Hilgenkamp',
+    role: 'Back-end developer',
+    profile: '/team/christian.jpeg',
+  },
+  {
+    name: 'Kippa',
+    role: 'CCO *Tock*',
+    profile: '/team/kippa.jpeg',
+  },
+]
 </script>

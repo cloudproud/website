@@ -1,8 +1,9 @@
 <template>
     <div>
         <Hero />
+        <Customers />
         <Feature />
-        <Testimonials />
+        <!-- <Testimonials /> -->
         <Contact />
         <Footer />
     </div>
