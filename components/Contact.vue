@@ -34,7 +34,7 @@
                 <span class="sr-only">Email</span>
                 <EnvelopeIcon class="h-7 w-6 text-gray-400" aria-hidden="true" />
               </dt>
-              <dd><a class="hover:text-white" href="mailto:hello@example.com">hello@cloudproud.nl</a></dd>
+              <dd><a class="hover:text-white" href="mailto:hello@cloudproud.nl">hello@cloudproud.nl</a></dd>
             </div>
             <div class="flex">
               <dd class="mt-2">
