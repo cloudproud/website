@@ -24,6 +24,10 @@ concurrency:
   group: "pages"
   cancel-in-progress: false
 
+env:
+  VITE_SLACK_INVITE_URI: ${{ vars.VITE_SLACK_INVITE_URI }}
+  VITE_SIGN_UP_URI: ${{ vars.VITE_SIGN_UP_URI }}
+
 jobs:
   # Build job
   build:
