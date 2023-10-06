@@ -15,8 +15,6 @@ socialImage:
   height: 630
 ---
 
-This is a sample blog post.
-
 ## Table of Contents
 
 Headings up to H3 (inclusive) are added to the Table of Contents

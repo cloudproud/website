@@ -1,9 +1,10 @@
 <template>
     <div>
-        <div class="px-6 py-32 lg:px-8">
+        <Navigation />
+        <div class="px-6 py-32 lg:px-8 bg-gray-500">
             <div class="mx-auto max-w-3xl text-base leading-7 text-gray-700">
                 <ContentDoc>
-                    <template v-slot="{doc}">
+                    <template v-slot="{doc}">    
                         <Section id="main">
                             <ContentRenderer :value="doc" class="blog-content" />
                         </Section>
@@ -11,12 +12,13 @@
                 </ContentDoc>
             </div>
         </div>
+        <Footer />
     </div>
 </template>
 
 <style>
 .blog-content h1 {
-    @apply mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl;
+    @apply mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl ;
 }
 
 .blog-content h2 {
