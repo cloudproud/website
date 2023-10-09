@@ -1,9 +1,10 @@
 <template>
     <div>
-        <Hero />
+        <IndexHero />
         <Customers />
         <Feature />
         <!-- <Testimonials /> -->
+        <LatestBlog />
         <Contact />
         <Footer />
     </div>

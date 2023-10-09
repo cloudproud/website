@@ -1,0 +1,17 @@
+{
+    "jeroen": {
+        "fullName": "Jeroen Rinzema",
+        "role": "CTO & Co-Founder",
+        "profileUrl": "/team/jeroen.jpeg"
+    },
+    "oxana": {
+        "fullName": "Oxana Bulanova",
+        "role": "CFO & Co-Founder",
+        "profileUrl": "/team/oxana.jpeg"
+    },
+    "givenchy": {
+        "fullName": "Givenchy Makela",
+        "role": "Front-end developer",
+        "profileUrl": "/team/kippa.jpeg"
+    }
+}
