@@ -22,5 +22,6 @@ const signUp = import.meta.env.VITE_SIGN_UP_URI
 const navigation = [
     { name: 'The Product', href: '/#feature' },
     { name: 'Contact', href: '/#footer' },
+    { name: 'Blogs', href: './blogs' },
 ]
 </script>
