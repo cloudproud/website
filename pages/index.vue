@@ -3,6 +3,7 @@
         <Hero />
         <Customers />
         <Feature />
+        <PricingSection />
         <!-- <Testimonials /> -->
         <Contact />
         <Footer />
@@ -10,6 +11,8 @@
 </template>
 
 <script setup>
+import PricingSection from '../components/PricingSection.vue';
+
 useSeoMeta({
     title: 'Cloud Proud, a single access point for all your data!',
     description: 'Simply connect your data sources, no copies or ETL pipelines required. Query your data in real-time.',
