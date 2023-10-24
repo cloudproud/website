@@ -1,3 +1,10 @@
+@import "@/assets/fontawesome/fontawesome.css";
+@import "@/assets/fontawesome/regular.css";
+@import "@/assets/fontawesome/light.css";
+@import "@/assets/fontawesome/solid.css";
+
+@import url("https://rsms.me/inter/inter.css");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
