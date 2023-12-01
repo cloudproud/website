@@ -40,19 +40,28 @@
           <a :href="signUp" class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400">Sign-up</a>
           <a :href="slack" class="text-sm font-semibold leading-6 text-white">Join our Slack! <span aria-hidden="true">→</span></a>
         </div>
-        <div class="my-10">
-          <span class="rounded-full bg-indigo-500/10 px-3 py-1 text-sm font-semibold leading-6 text-indigo-400 ring-1 ring-inset ring-indigo-500/20">
-            No credit card required
-          </span>
+      </div>
+      <div class="w-full mx-auto mt-16 flex max-w-2xl sm:mt-24 lg:ml-10 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32">
+        <div class="grid gap-5">
+          <div class="w-screen overflow-hidden rounded-tl-xl bg-gray-900 ring-1 ring-white/10">
+            <div class="flex bg-gray-800/40 ring-1 ring-white/5">
+              <div class="-mb-px flex text-sm font-medium leading-6 text-gray-400">
+                <div class="border-r border-gray-600/10 px-4 py-2">Shell</div>
+              </div>
+            </div>
+            <div class="px-6 pb-14 pt-6">
+              <x-placeholder message="Running kit">
+                <pre class="text-[0.8125rem] leading-6 text-gray-300" style="tab-size: 2"><code>$ <span class="text-gray-500"># 🚀 Run it locally on your own machine to experience it yourself!</span>
+$ docker run -p 5432:5432 registry.cloudproud.nl/lab/kit
+$ <span class="text-gray-500"># 🌍 Open your browser and go to <a target="_blank" href="http://localhost:5432" class="underline">http://localhost:5432</a></span>
+$ <span class="text-gray-500"># 📔 Check out our documentation at <a target="_blank" href="https://cloudproud.dev/docs" class="underline">https://cloudproud.dev/docs</a></span>
+$ <span class="text-gray-500"># 🧑‍💻 Join our <a class="underline" target="_blank" :href="signUp">Slack</a>!</span>
+</code></pre>
+              </x-placeholder>
+            </div>
+          </div>
         </div>
       </div>
-      <!-- <div class="w-full mx-auto mt-16 flex max-w-2xl sm:mt-24 lg:ml-10 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32">
-        <div class="grid gap-5">
-          <a href="https://youtu.be/ZuDhWad8H6A" target="_blank">
-            <img src="https://i.ytimg.com/vi/ZuDhWad8H6A/maxresdefault.jpg" alt="Kit DEMO">
-          </a>
-        </div>
-      </div> -->
     </div>
   </div>
 </template>
