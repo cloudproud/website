@@ -15,21 +15,12 @@
       <div class="aspect-[1108/632] w-[69.25rem] bg-gradient-to-r from-[#80caff] to-[#4f46e5] opacity-20" style="clip-path: polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)" />
     </div>
     <div class="relative mx-auto max-w-7xl px-6 pt-40 lg:flex lg:px-8 lg:pt-40">
-      <div class="absolute w-full top-0 my-6 pr-10 grid grid-cols-2">
-        <div class="flex-1">
-          <div class="flex space-x-4">
-            <a v-for="item in navigation" :key="item.name" :href="item.href" :class="[item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white', 'rounded-md px-3 py-2 text-sm font-medium']" :aria-current="item.current ? 'page' : undefined">{{ item.name }}</a>
-          </div>
-        </div>
-        <a :href="signUp" class="justify-self-end">
-          <button type="button" class="rounded-md bg-indigo-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">
-            Login
-          </button>
-        </a>
-      </div>
+      <Navigation />
 
       <div class="max-w-2xl flex-shrink-0 lg:mx-0 lg:max-w-xl">
-        <img class="h-11" src="@/assets/images/cloudproud-icon-dark.svg" alt="Cloud Proud" />
+        <a href="/">
+          <img class="h-11" src="@/assets/images/cloudproud-icon-dark.svg" alt="Cloud Proud" />
+        </a>
         <h1 class="mt-10 text-4xl font-bold tracking-tight text-white sm:text-6xl">
           A single access point for all your data
         </h1>
@@ -69,10 +60,4 @@ $ <span class="text-gray-500"># 🧑‍💻 Join our <a class="underline" target
 <script setup>
 const slack = import.meta.env.VITE_SLACK_INVITE_URI
 const signUp = import.meta.env.VITE_SIGN_UP_URI
-
-const navigation = [
-  { name: 'The Product', href: '#feature' },
-  { name: 'Contact', href: '#footer' },
-  { name: 'Documentation', href: 'https://cloudproud.dev/docs' },
-]
 </script>
