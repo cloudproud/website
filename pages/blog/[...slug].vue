@@ -15,7 +15,7 @@
 </template>
 
 <script setup>
-import authors from '../../authors.json'
+import authors from '@/authors.json'
 
 const { page } = useContent()
 

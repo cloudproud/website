@@ -41,14 +41,14 @@
               </div>
             </div>
             <div class="px-6 pb-14 pt-6">
-              <x-placeholder message="Running kit">
+              <div>
                 <pre class="text-[0.8125rem] leading-6 text-gray-300" style="tab-size: 2"><code>$ <span class="text-gray-500"># 🚀 Run it locally on your own machine to experience it yourself!</span>
 $ docker run -p 5432:5432 registry.cloudproud.nl/lab/kit
 $ <span class="text-gray-500"># 🌍 Open your browser and go to <a target="_blank" href="http://localhost:5432" class="underline">http://localhost:5432</a></span>
 $ <span class="text-gray-500"># 📔 Check out our documentation at <a target="_blank" href="https://cloudproud.dev/docs" class="underline">https://cloudproud.dev/docs</a></span>
 $ <span class="text-gray-500"># 🧑‍💻 Join our <a class="underline" target="_blank" :href="signUp">Slack</a>!</span>
 </code></pre>
-              </x-placeholder>
+              </div>
             </div>
           </div>
         </div>

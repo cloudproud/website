@@ -22,7 +22,7 @@ export default defineNuxtConfig({
     documentDriven: true,
     highlight: {
       theme: 'github-dark',
-      preload: ['go','javascript']
+      preload: ['go', 'javascript', 'sql']
     },
   }
 })

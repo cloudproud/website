@@ -1,14 +1,12 @@
 <template>
     <div>
         <BlogsHero />
-        <AllBlogs />
+        <BlogsOverview />
         <Footer />
     </div>
 </template>
   
 <script setup>
-import AllBlogs from '../../components/AllBlogs.vue';
-
 useSeoMeta({
     title: 'Cloud Proud, a single access point for all your data!',
     description: 'Simply connect your data sources, no copies or ETL pipelines required. Query your data in real-time.',

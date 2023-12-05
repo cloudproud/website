@@ -2,7 +2,7 @@
     <div class="absolute w-full top-0 my-6 pr-10 grid grid-cols-2">
         <div class="flex-1">
             <div class="flex space-x-4">
-                <a v-for="item in navigation" :key="item.name" :href="item.href" :class="[item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white', 'rounded-md px-3 py-2 text-sm font-medium']" :aria-current="item.current ? 'page' : undefined">{{ item.name }}</a>
+                <NuxtLink v-for="item in navigation" :key="item.name" :href="item.href" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">{{ item.name }}</NuxtLink>
             </div>
         </div>
         <a :href="signUp" class="justify-self-end">
@@ -18,8 +18,8 @@ const signUp = import.meta.env.VITE_SIGN_UP_URI
 
 const navigation = [
     { name: 'The Product', href: '/#feature' },
-    { name: 'Contact', href: '/#footer' },
     { name: 'Blogs', href: '/blogs' },
     { name: 'Documentation', href: 'https://cloudproud.dev/docs' },
+    { name: 'Contact', href: '/#footer' },
 ]
 </script>
