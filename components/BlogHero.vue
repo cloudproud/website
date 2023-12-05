@@ -32,10 +32,6 @@
                     {{ props.title }}
                 </h1>
 
-                <p class="mt-5 text-white text-2xl">
-                    {{ props.description }}
-                </p>
-
                 <div class="relative mt-8 flex items-center gap-x-4">
                     <img :src="authors[props.author].profileUrl" alt="" class="h-10 w-10 rounded-full bg-gray-50" />
                     <div class="text-sm leading-6">
@@ -62,6 +58,5 @@ const props = defineProps({
     category: String,
     date: String,
     author: String,
-    description: String,
 })
 </script>

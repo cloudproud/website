@@ -2,8 +2,7 @@
     <div>
         <ContentDoc>
             <template v-slot="{ doc }">
-                <BlogHero :category="doc.category" :date="doc.date" :author="doc.author" :title="doc.headline"
-                    :description="doc.description" />
+                <BlogHero :category="doc.category" :date="doc.date" :author="doc.author" :title="doc.headline" />
                 <div class="mx-auto py-20 max-w-7xl px-6 lg:px-8 text-base leading-7 text-gray-700">
                     <section>
                         <ContentRenderer :value="doc" class="blog-content" />
@@ -46,15 +45,19 @@ useSeoMeta({
 }
 
 .blog-content h2 {
-    @apply text-2xl font-bold tracking-tight text-gray-900;
+    @apply text-2xl font-bold tracking-tight text-gray-900 mt-6;
 }
 
 .blog-content p {
-    @apply mt-6;
+    @apply mt-3;
 }
 
 .blog-content img {
     @apply aspect-video rounded-xl bg-gray-50 object-cover;
+}
+
+.blog-content p>a {
+    @apply underline;
 }
 
 #test {
