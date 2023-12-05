@@ -3,7 +3,8 @@
         <Hero />
         <Customers />
         <Feature />
-        <!-- <Testimonials /> -->
+        <Testimonials />
+        <FAQ />
         <Contact />
         <Footer />
     </div>
