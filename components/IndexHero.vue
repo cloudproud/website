@@ -46,7 +46,7 @@
 $ docker run -p 5432:5432 registry.cloudproud.nl/lab/kit
 $ <span class="text-gray-500"># 🌍 Open your browser and go to <a target="_blank" href="http://localhost:5432" class="underline">http://localhost:5432</a></span>
 $ <span class="text-gray-500"># 📔 Check out our documentation at <a target="_blank" href="https://cloudproud.dev/docs" class="underline">https://cloudproud.dev/docs</a></span>
-$ <span class="text-gray-500"># 🧑‍💻 Join our <a class="underline" target="_blank" :href="signUp">Slack</a>!</span>
+$ <span class="text-gray-500"># 🧑‍💻 Join our <a class="underline" target="_blank" :href="slack">Slack</a>!</span>
 </code></pre>
               </div>
             </div>
