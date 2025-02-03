@@ -81,24 +81,9 @@ const people = [
     profile: '/team/jeroen.jpeg',
   },
   {
-    name: 'Sarath S. Pillai',
-    role: 'Senior Back-end developer',
-    profile: '/team/sarath.jpeg',
-  },
-  {
-    name: 'Yuriy T.',
-    role: 'Senior Back-end developer',
-    profile: '/team/yuriy.jpeg',
-  },
-  {
-    name: 'Christian Hilgenkamp',
-    role: 'Back-end developer',
-    profile: '/team/christian.jpeg',
-  },
-  {
-    name: 'Kippa',
-    role: 'CCO *Tock*',
-    profile: '/team/kippa.jpeg',
-  },
+    name: 'Daneric Aalbers',
+    role: 'Front-end engineer',
+    profile: '/team/daneric.jpeg',
+  }
 ]
 </script>
