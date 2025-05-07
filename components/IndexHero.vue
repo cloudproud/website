@@ -27,12 +27,12 @@
         <p class="mt-6 text-lg leading-8 text-gray-300">
           No copies, no ETL pipelines simply connect and query your data!
         </p>
-        <div class="mt-10 flex items-center gap-x-6">
+        <!-- <div class="mt-10 flex items-center gap-x-6">
           <a :href="signUp" class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400">Sign-up</a>
           <a :href="slack" class="text-sm font-semibold leading-6 text-white">Join our Slack! <span aria-hidden="true">→</span></a>
-        </div>
+        </div> -->
       </div>
-      <div class="w-full mx-auto mt-16 flex max-w-2xl sm:mt-24 lg:ml-10 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32">
+      <!-- <div class="w-full mx-auto mt-16 flex max-w-2xl sm:mt-24 lg:ml-10 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32">
         <div class="grid gap-5">
           <div class="w-screen overflow-hidden rounded-tl-xl bg-gray-900 ring-1 ring-white/10">
             <div class="flex bg-gray-800/40 ring-1 ring-white/5">
@@ -52,7 +52,7 @@ $ <span class="text-gray-500"># 🧑‍💻 Join our <a class="underline" target
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>

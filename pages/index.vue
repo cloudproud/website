@@ -4,7 +4,7 @@
         <Customers />
         <Feature />
         <!-- <Testimonials /> -->
-        <LatestBlog />
+        <!-- <LatestBlog /> -->
         <Contact />
         <Footer />
     </div>

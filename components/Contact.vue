@@ -34,9 +34,9 @@
                 <span class="sr-only">Email</span>
                 <EnvelopeIcon class="h-7 w-6 text-gray-400" aria-hidden="true" />
               </dt>
-              <dd><a class="hover:text-white" href="mailto:hello@cloudproud.nl">hello@cloudproud.nl</a></dd>
+              <dd><a class="hover:text-white" href="mailto:contact@cloudproud.nl">contact@cloudproud.nl</a></dd>
             </div>
-            <div class="flex">
+            <!-- <div class="flex">
               <dd class="mt-2">
                 <a :href="slack" target="_blank">
                   <button type="button" class="rounded-md bg-indigo-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">
@@ -44,7 +44,7 @@
                   </button>
                 </a>
               </dd>
-            </div>
+            </div> -->
           </dl>
         </div>
       </div>
@@ -81,9 +81,24 @@ const people = [
     profile: '/team/jeroen.jpeg',
   },
   {
+    name: 'Sarath S. Pillai',
+    role: 'Senior Back-end developer',
+    profile: '/team/sarath.jpeg',
+  },
+  {
+    name: 'Igor Beliakov',
+    role: 'Senior DevOps engineer',
+    profile: '/team/igor.jpeg',
+  },
+  {
     name: 'Daneric Aalbers',
-    role: 'Front-end engineer',
+    role: 'Software engineer',
     profile: '/team/daneric.jpeg',
-  }
+  },
+  {
+    name: 'Kippa',
+    role: 'CCO *Tock*',
+    profile: '/team/kippa.jpeg',
+  },
 ]
 </script>
