@@ -24,46 +24,23 @@ concurrency:
   group: "pages"
   cancel-in-progress: false
 
-env:
-  VITE_SLACK_INVITE_URI: ${{ vars.VITE_SLACK_INVITE_URI }}
-  VITE_SIGN_UP_URI: ${{ vars.VITE_SIGN_UP_URI }}
-
 jobs:
   # Build job
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: "20"
+      - uses: actions/checkout@v5
       - uses: pnpm/action-setup@v4
-      - name: Get pnpm store directory
-        shell: bash
-        run: |
-          echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
-
-      - uses: actions/cache@v4
-        name: Setup pnpm cache
         with:
-          path: ${{ env.STORE_PATH }}
-          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-store-
-      - name: Restore cache
-        uses: actions/cache@v4
+          version: ${{ vars.PNPM_VERSION }}
+      - name: Set-up Node
+        uses: actions/setup-node@v5
         with:
-          path: |
-            dist
-            .nuxt
-          key: ${{ runner.os }}-nuxt-build-${{ hashFiles('dist') }}
-          restore-keys: |
-            ${{ runner.os }}-nuxt-build-
+          node-version: ${{ vars.NODEJS_VERSION }}
+          cache: 'pnpm'
       - name: Install dependencies
         run: pnpm install
-      - name: Static HTML export with Nuxt
+      - name: Static HTML export with Sveltekit
         run: pnpm run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
