@@ -1,10 +1,11 @@
 <script lang="ts">
 	import { darkMode } from '$lib/stores/theme';
+	import Footer from '../components/footer.svelte';
 </script>
 
-<div class="relative min-h-screen bg-white dark:bg-[rgb(20,20,20)]">
+<div class="relative bg-white dark:bg-[rgb(20,20,20)]">
 	<div
-		class="mx-auto max-w-12xl flex flex-col lg:grid lg:grid-cols-12 lg:gap-x-8 px-6 lg:px-8 min-h-screen"
+		class="mx-auto max-w-12xl flex flex-col lg:grid lg:grid-cols-12 lg:gap-x-8 px-6 lg:px-8 min-[90vh]"
 	>
 		<div
 			class="pt-10 pb-0 lg:py-20 lg:col-span-5 lg:px-0 flex items-center justify-center order-1 lg:order-none"
@@ -20,13 +21,13 @@
 					<div
 						class="relative rounded-full px-3 py-1 text-sm/6 text-gray-600 dark:text-gray-400 ring-1 ring-gray-900/10 dark:ring-white/10 hover:ring-gray-900/20 dark:hover:ring-white/20"
 					>
-						Dynamic tech start-up with a team spanning across Europe
+						Dynamic tech start-up with a team spanning across Europe 🇳🇱🇪🇺
 						<!-- <a
 							href="https://cloudproud.example.com/about"
 							class="whitespace-nowrap font-semibold text-gray-900 dark:text-white"
 						> -->
-							<span aria-hidden="true" class="absolute inset-0"></span>
-							<!-- Learn more <span aria-hidden="true">&rarr;</span> -->
+						<span aria-hidden="true" class="absolute inset-0"></span>
+						<!-- Learn more <span aria-hidden="true">&rarr;</span> -->
 						<!-- </a> -->
 					</div>
 				</div>
@@ -64,16 +65,24 @@
 			class="relative lg:col-span-7 min-h-[50vh] lg:min-h-full py-10 lg:px-6 lg:p-10 order-2 lg:order-none flex items-center max-w-lg lg:max-w-none mx-auto lg:mx-0"
 		>
 			<div class="relative w-full min-h-[50vh] lg:h-full overflow-hidden rounded-2xl shadow-1xl">
+				<!-- Video for desktop/tablet -->
 				<video
 					src="/promo.mp4"
 					autoplay
 					muted
 					loop
 					playsinline
-					class="w-full h-full min-h-[50vh] object-cover"
+					poster="/promo-poster.jpg"
+					class="hidden sm:block w-full h-full min-h-[50vh] object-cover"
 				>
 					<track kind="captions" />
 				</video>
+				<!-- Fallback image for mobile -->
+				<img
+					src="/promo-poster.jpg"
+					alt="CloudProud - Boosting businesses with innovative solutions"
+					class="sm:hidden w-full h-full min-h-[50vh] object-cover"
+				/>
 				<div class="absolute inset-0 bg-black/60 pointer-events-none"></div>
 
 				<button
@@ -123,3 +132,5 @@
 		</div>
 	</div>
 </div>
+
+<Footer />
