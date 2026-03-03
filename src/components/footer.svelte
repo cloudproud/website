@@ -52,7 +52,7 @@
 			</div>
 
 			<!-- Navigation columns - matches hero right column -->
-			<div class="mt-10 lg:mt-0 lg:col-span-7 grid grid-cols-2 gap-8">
+			<div class="mt-10 lg:mt-0 lg:col-span-7 grid grid-cols-2 gap-8 lg:px-6">
 				<div>
 					<h3 class="text-sm font-semibold text-gray-900 dark:text-white">Company</h3>
 					<ul role="list" class="mt-6 space-y-4">
@@ -100,14 +100,14 @@
 
 		<!-- Bottom bar -->
 		<div class="mt-12 border-t border-gray-200 pt-8 dark:border-white/10">
-			<div class="flex flex-col items-center justify-between gap-4 sm:flex-row">
+			<div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
 				<!-- Copyright -->
-				<p class="text-sm/6 text-gray-500 dark:text-gray-400">
+				<p class="text-sm/6 text-gray-500 dark:text-gray-400 text-center sm:text-left">
 					&copy; {new Date().getFullYear()} Cloud Proud B.V. All rights reserved.
 				</p>
 
 				<!-- Social links and EU badge -->
-				<div class="flex items-center gap-6">
+				<div class="flex items-center justify-center sm:justify-end gap-6">
 					<!-- Social icons -->
 					<div class="flex gap-4">
 						<a

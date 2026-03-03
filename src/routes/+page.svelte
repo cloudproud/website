@@ -3,7 +3,7 @@
 	import Footer from '../components/footer.svelte';
 </script>
 
-<div class="relative bg-white dark:bg-[rgb(20,20,20)] min-h-screen">
+<div class="relative bg-white dark:bg-[rgb(20,20,20)]">
 	<div
 		class="mx-auto max-w-12xl flex flex-col lg:grid lg:grid-cols-12 lg:gap-x-8 px-6 lg:px-8 min-[90vh] pt-[env(safe-area-inset-top)]"
 	>
