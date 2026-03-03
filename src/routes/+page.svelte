@@ -10,7 +10,7 @@
 		<div
 			class="pt-10 pb-0 lg:py-20 lg:col-span-5 lg:px-0 flex items-center justify-center order-1 lg:order-none"
 		>
-			<div class="w-full max-w-lg">
+			<div class="w-full lg:max-w-lg">
 				<img src="/logos/cloudproud/icon-light.svg" alt="CloudProud" class="h-11 dark:hidden" />
 				<img
 					src="/logos/cloudproud/icon-dark.svg"
@@ -62,7 +62,7 @@
 			</div>
 		</div>
 		<div
-			class="relative lg:col-span-7 min-h-[50vh] lg:min-h-full py-10 lg:px-6 lg:p-10 order-2 lg:order-none flex items-center max-w-lg lg:max-w-none mx-auto lg:mx-0"
+			class="relative lg:col-span-7 min-h-[50vh] lg:min-h-full py-10 lg:px-6 lg:p-10 order-2 lg:order-none flex items-center"
 		>
 			<div class="relative w-full min-h-[50vh] lg:h-full overflow-hidden rounded-2xl shadow-1xl">
 				<!-- Video for desktop/tablet -->

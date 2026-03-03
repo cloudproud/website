@@ -1,48 +1,54 @@
 <footer class="border-t border-gray-200 bg-white dark:border-white/10 dark:bg-[rgb(20,20,20)]">
-	<div class="mx-auto max-w-7xl px-6 py-12 lg:px-8">
+	<div class="mx-auto max-w-12xl px-6 py-12 lg:px-8">
 		<!-- Main footer content -->
-		<div class="xl:grid xl:grid-cols-3 xl:gap-8">
-			<!-- Logo and tagline -->
-			<div class="space-y-4">
-				<div class="flex items-center gap-3">
-					<a href="/" class="inline-block">
-						<img src="/logos/cloudproud/icon-light.svg" alt="Cloud Proud" class="h-8 dark:hidden" />
-						<img
-							src="/logos/cloudproud/icon-dark.svg"
-							alt="Cloud Proud"
-							class="hidden h-8 dark:block"
-						/>
-					</a>
-					<!-- Team member Kippa -->
-					<div class="relative group">
-						<img
-							src="/team/kippa.jpeg"
-							alt="Kippa - Team Member"
-							class="w-10 h-10 rounded-full object-cover hover:shadow-[0_0_20px_rgba(34,211,238,0.7)] transition-all duration-300"
-						/>
-						<div
-							class="absolute top-full left-1/2 -translate-x-1/2 mt-3 px-3 py-2 bg-gray-900/95 dark:bg-white/95 backdrop-blur-sm rounded-lg shadow-xl opacity-0 group-hover:opacity-100 transition-all duration-200 pointer-events-none z-10"
-						>
-							<div class="text-sm font-medium text-white dark:text-gray-900 whitespace-nowrap">
-								Kippa
-							</div>
-							<div class="text-xs text-gray-400 dark:text-gray-500 whitespace-nowrap">
-								Head of Security
-							</div>
+		<div class="flex flex-col lg:grid lg:grid-cols-12 lg:gap-x-8">
+			<!-- Logo and tagline - matches hero left column -->
+			<div class="lg:col-span-5 flex items-center justify-center">
+				<div class="w-full lg:max-w-lg space-y-4">
+					<div class="flex items-center gap-3">
+						<a href="/" class="inline-block">
+							<img
+								src="/logos/cloudproud/icon-light.svg"
+								alt="Cloud Proud"
+								class="h-8 dark:hidden"
+							/>
+							<img
+								src="/logos/cloudproud/icon-dark.svg"
+								alt="Cloud Proud"
+								class="hidden h-8 dark:block"
+							/>
+						</a>
+						<!-- Team member Kippa -->
+						<div class="relative group">
+							<img
+								src="/team/kippa.jpeg"
+								alt="Kippa - Team Member"
+								class="w-10 h-10 rounded-full object-cover hover:shadow-[0_0_20px_rgba(34,211,238,0.7)] transition-all duration-300"
+							/>
 							<div
-								class="absolute -top-1.5 left-1/2 -translate-x-1/2 w-3 h-3 bg-gray-900/95 dark:bg-white/95 rotate-45"
-							></div>
+								class="absolute top-full left-1/2 -translate-x-1/2 mt-3 px-3 py-2 bg-gray-900/95 dark:bg-white/95 backdrop-blur-sm rounded-lg shadow-xl opacity-0 group-hover:opacity-100 transition-all duration-200 pointer-events-none z-10"
+							>
+								<div class="text-sm font-medium text-white dark:text-gray-900 whitespace-nowrap">
+									Kippa
+								</div>
+								<div class="text-xs text-gray-400 dark:text-gray-500 whitespace-nowrap">
+									Head of Security
+								</div>
+								<div
+									class="absolute -top-1.5 left-1/2 -translate-x-1/2 w-3 h-3 bg-gray-900/95 dark:bg-white/95 rotate-45"
+								></div>
+							</div>
 						</div>
 					</div>
+					<p class="text-sm/6 text-gray-600 dark:text-gray-400 max-w-xs">
+						Innovative cloud solutions and smart software for businesses ready to lead in the
+						digital world.
+					</p>
 				</div>
-				<p class="text-sm/6 text-gray-600 dark:text-gray-400 max-w-xs">
-					Innovative cloud solutions and smart software for businesses ready to lead in the digital
-					world.
-				</p>
 			</div>
 
-			<!-- Navigation columns -->
-			<div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
+			<!-- Navigation columns - matches hero right column -->
+			<div class="mt-10 lg:mt-0 lg:col-span-7 grid grid-cols-2 gap-8">
 				<div>
 					<h3 class="text-sm font-semibold text-gray-900 dark:text-white">Company</h3>
 					<ul role="list" class="mt-6 space-y-4">
