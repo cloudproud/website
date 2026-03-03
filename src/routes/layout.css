@@ -2,3 +2,16 @@
 @plugin '@tailwindcss/typography';
 
 @custom-variant dark (&:where(.dark, .dark *));
+
+/* iOS safe area support - extend background to edges */
+html,
+body {
+	background-color: white;
+}
+
+.dark html,
+.dark body,
+html.dark,
+html.dark body {
+	background-color: rgb(20, 20, 20);
+}

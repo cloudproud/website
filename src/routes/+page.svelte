@@ -3,12 +3,12 @@
 	import Footer from '../components/footer.svelte';
 </script>
 
-<div class="relative bg-white dark:bg-[rgb(20,20,20)]">
+<div class="relative bg-white dark:bg-[rgb(20,20,20)] min-h-screen">
 	<div
-		class="mx-auto max-w-12xl flex flex-col lg:grid lg:grid-cols-12 lg:gap-x-8 px-6 lg:px-8 min-[90vh]"
+		class="mx-auto max-w-12xl flex flex-col lg:grid lg:grid-cols-12 lg:gap-x-8 px-6 lg:px-8 min-[90vh] pt-[env(safe-area-inset-top)]"
 	>
 		<div
-			class="pt-10 pb-0 lg:py-20 lg:col-span-5 lg:px-0 flex items-center justify-center order-1 lg:order-none"
+			class="pt-10 pb-0 lg:py-20 lg:col-span-5 lg:px-0 flex items-center justify-center order-1 lg:order-none pl-[env(safe-area-inset-left)]"
 		>
 			<div class="w-full lg:max-w-lg">
 				<img src="/logos/cloudproud/icon-light.svg" alt="CloudProud" class="h-11 dark:hidden" />
@@ -62,7 +62,7 @@
 			</div>
 		</div>
 		<div
-			class="relative lg:col-span-7 min-h-[50vh] lg:min-h-full py-10 lg:px-6 lg:p-10 order-2 lg:order-none flex items-center"
+			class="relative lg:col-span-7 min-h-[50vh] lg:min-h-full py-10 lg:px-6 lg:p-10 order-2 lg:order-none flex items-center pr-[env(safe-area-inset-right)]"
 		>
 			<div class="relative w-full min-h-[50vh] lg:h-full overflow-hidden rounded-2xl shadow-1xl">
 				<!-- Video for desktop/tablet -->

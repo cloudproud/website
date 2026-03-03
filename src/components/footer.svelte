@@ -1,5 +1,9 @@
-<footer class="border-t border-gray-200 bg-white dark:border-white/10 dark:bg-[rgb(20,20,20)]">
-	<div class="mx-auto max-w-12xl px-6 py-12 lg:px-8">
+<footer
+	class="border-t border-gray-200 bg-white dark:border-white/10 dark:bg-[rgb(20,20,20)] pb-[env(safe-area-inset-bottom)]"
+>
+	<div
+		class="mx-auto max-w-12xl px-6 py-12 lg:px-8 pl-[max(1.5rem,env(safe-area-inset-left))] pr-[max(1.5rem,env(safe-area-inset-right))]"
+	>
 		<!-- Main footer content -->
 		<div class="flex flex-col lg:grid lg:grid-cols-12 lg:gap-x-8">
 			<!-- Logo and tagline - matches hero left column -->
